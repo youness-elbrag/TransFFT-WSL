@@ -10,12 +10,12 @@ now tried to test the approach on Data from [Kaggle RSNA Screening Mammography B
             conda create --name TransFFT-MIL python=3.6
     - install the requirements
     
-            pip install -r requirements.txt     
+            pip install -r requirements.txt  
+
 * Run the code :
-     to the training model 
-     **Note** in our experiment we Re-Developed two approaches based Positional Encodings methods *FFTPEG* abd *FF_ATPEG*
-     that can be changed in TransFFPEG.py file 
-     
-       ```python
-        python train.py --stage 'train' --gpus 0 --Epochs 200
-        ```       
+    -  training model </br>
+        **Note** in our experiment we Re-Developed two approaches based Positional Encodings methods **FFTPEG** and **FF_ATPEG**
+        that can be changed in TransFFPEG.py file 
+        ```python
+                python train.py --stage 'train' --gpus 0 --Epochs 200
+                ```       
