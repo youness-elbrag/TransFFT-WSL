@@ -3,7 +3,7 @@ import torch
 from blocks_networks import TransLayer
 from Positional_encoding import FFTPEG , FF_ATPEG
 
-class TransformMIL(pl.LightningModule):
+class TransFFTMIL(pl.LightningModule):
     def __init__(self,n_classes,Positional_encoding):
         super(TransformMIL,self).__init__()
         self.Postional_Layer = Positional_encoding(12, 12, 512)
@@ -50,7 +50,7 @@ class TransformMIL(pl.LightningModule):
 if __name__ == '__main__':
 
     data= torch.randn((1,1, 2134,1024))
-    model = TransformMIL(n_classes=2,Positional_encoding=FFTPEG)
+    model = TransFFTMIL(n_classes=2,Positional_encoding=FFTPEG)
     out = model(data=data)
     print(out)
     #model_.eval()
