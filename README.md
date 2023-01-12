@@ -6,9 +6,8 @@ now tried to test the approach on Data from [Kaggle RSNA Screening Mammography B
 
 * Setup the ENV:
      - Create the environment 
-     
-            conda create --name Segemnetation python=3.6
 
+            conda create --name TransFFT-MIL python=3.6
     - install the requirements
-
+    
             pip install -r requirements.txt     

@@ -1,0 +1,5 @@
+python-gdcm
+pylibjpeg
+nystrom-attention
+torch-optimizer
+pytorch-lightning
