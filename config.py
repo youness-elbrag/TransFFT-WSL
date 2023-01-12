@@ -1,0 +1,20 @@
+class Config:
+    Save_Checkpoint = "./checkPoints_train"
+    name_version = "Brats_PredictionProbability"
+    number_Version = 1
+    log_path_val = "./checkPoints_Val"
+    GPU='gpu'
+    TPU='tpu'
+    grad_acc = 2
+    device_gpu = 0
+    device_tpu = 8
+    amp_level = "O2"  
+    precision = 16 
+    Epochs=1
+    lr= 0.0002  # 1e-2
+    weight_decay = 0.00001
+    patience = 10
+    n_classes = 2 
+    seed = 55
+    num_workers = 4 ## default 2
+    batch_size = 1 ## defualt 64
