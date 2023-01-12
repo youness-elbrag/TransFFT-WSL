@@ -16,6 +16,7 @@ now tried to test the approach on Data from [Kaggle RSNA Screening Mammography B
     -  training model </br>
         **Note** in our experiment we Re-Developed two approaches based Positional Encodings methods **FFTPEG** and **FF_ATPEG**
         that can be changed in TransFFPEG.py file 
-        ```python
-                python train.py --stage 'train' --gpus 0 --Epochs 200
+
+               ```python
+        python train.py --stage 'train' --gpus 0 --Epochs 200
                 ```       
